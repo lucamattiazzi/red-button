@@ -1,5 +1,4 @@
 .button {
-  background-image: url('imgs/button.png');
   background-repeat: no-repeat;
   width: 400px;
   height: 400px;
@@ -9,6 +8,17 @@
   border: 0px solid black;
   background-position: center;
   cursor: pointer;
+}
+
+#button {
+  background-image: url('imgs/button.png');
+
+}
+
+#button_pushed {
+  background-image: url('imgs/button_pushed.png');
+  pointer-events: none;
+  opacity: 0;
 }
 
 .title {

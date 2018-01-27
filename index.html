@@ -26,14 +26,16 @@
   function pushButton(status)
   {
     if (status=='push') {
-      document.getElementById('button').style.backgroundImage = 'url(imgs/button_pushed.png)';
+      document.getElementById('button').style.opacity = 0;
+      document.getElementById('button_pushed').style.opacity = 1;
       document.getElementById('back_light').style.display = 'block';
       document.getElementById('title').className += ' pushed';
     }
 
     else
      {
-      document.getElementById('button').style.backgroundImage = 'url(imgs/button.png)';
+     document.getElementById('button').style.opacity = 1;
+     document.getElementById('button_pushed').style.opacity = 0;
       document.getElementById('back_light').style.display = 'none';
       document.getElementById('poster').className += ' pushed';
       document.getElementById('gradient').className += ' pushed';
@@ -96,6 +98,7 @@
     <div class='back_light' id='back_light'></div>
     <div class='title' id='title'>- NEXT BEST -  - MOVIE -</div>
     <div class='button' id='button' onmousedown='pushButton("push")' onmouseup='pushButton("pull")'></div>
+    <div class='button' id='button_pushed'></div>
     <div class='leonardo' id='leonardo'></div>
     <div class='benigni' id='benigni'></div>
     <div class="eagle first" id='eagle_01'></div>
