@@ -6,7 +6,7 @@ const translateClient = translate({
   projectId: 'converge18-mil-4001'
 });
 
-const data = fs.readFileSync('./plots_clean.json').toString().split('\n').map(r => {
+const data = fs.readFileSync('./results/plots_clean.json').toString().split('\n').map(r => {
   try {
     return JSON.parse(r)
   } catch(err) {
