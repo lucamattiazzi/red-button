@@ -1,0 +1,117 @@
+<html>
+<head>
+<link rel='stylesheet' href='style.css' />
+<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script type="text/javascript">
+
+  var socket = io.connect('/')
+  socket.on('connect', () => {
+    console.log('ciao')
+  })
+  socket.on('button', data => {
+    pushButton("push")
+  })
+
+  socket.on('generate', data => {
+    pushButton("pull")
+    console.log(data.text)
+    document.getElementById('info').innerHTML = data.text.en
+    document.getElementById('info_it').innerHTML = data.text.it
+  })
+
+  function pushButton(status)
+  {
+    if (status=='push') {
+      document.getElementById('button').style.backgroundImage = 'url(imgs/button_pushed.png)';
+      document.getElementById('back_light').style.display = 'block';
+      document.getElementById('title').className += ' pushed';
+    }
+
+    else
+     {
+      document.getElementById('button').style.backgroundImage = 'url(imgs/button.png)';
+      document.getElementById('back_light').style.display = 'none';
+      document.getElementById('poster').className += ' pushed';
+      document.getElementById('gradient').className += ' pushed';
+      document.getElementById('title').className = 'title';
+      document.getElementById('firework_01').style.display = 'block';
+      document.getElementById('firework_02').style.display = 'block';
+      document.getElementById('confetti').style.display = 'block';
+      document.getElementById('leonardo').style.display = 'block';
+      document.getElementById('benigni').style.display = 'block';
+
+      setTimeout(() => {
+        document.getElementById('audio_eagle').play()
+      }, 500)
+
+      document.getElementById('eagle_01').style.display = 'block';
+      document.getElementById('eagle_02').style.display = 'block';
+
+      $('#eagle_01').animate({ opacity: 1.00 }, { duration: 400, queue: false });
+      $('#eagle_02').animate({ opacity: 1.00 }, { duration: 400, queue: false });
+
+      $('#eagle_01').animate({ 'left': '120%' }, 2000);
+      $('#eagle_02').animate({ 'left': '-20%' }, 2000);
+
+      $('#title').delay(0000).animate({ opacity: 0 }, 2500);
+      $('#firework_01').delay(3000).animate({ opacity: 0 }, 2500);
+      $('#firework_02').delay(4000).animate({ opacity: 0 }, 2500);
+      $('#confetti').delay(4000).animate({ opacity: 0 }, 2500);
+      $('#leonardo').delay(5000).animate({ opacity: 0 }, 2500);
+      $('#benigni').delay(4000).animate({ opacity: 0 }, 2500);
+
+
+      $('.info').delay(5000).animate({ opacity: 1.00 }, 500);
+      $('.info_it').delay(5000).animate({ opacity: 1.00 }, 500);
+
+
+      }
+  }
+
+  function removeGifs()
+ {
+  console.log('remove')
+  document.getElementById('firework_01').style.display = 'none';
+  document.getElementById('firework_02').style.display = 'none';
+  document.getElementById('confetti').style.display = 'none';
+  document.getElementById('leonardo').style.display = 'none';
+  document.getElementById('benigni').style.display = 'none';
+ }
+
+
+
+</script>
+
+  <body>
+
+    <audio id='audio_eagle' src='/imgs/eagle.mp3'></audio>
+
+    <div class='wall' id='wall'></div>
+    <div class='back' id='back'></div>
+    <!-- <div class='back_noise' id='back_noise'></div> -->
+    <div class='back_light' id='back_light'></div>
+    <div class='title' id='title'>- NEXT BEST -  - MOVIE -</div>
+    <div class='button' id='button' onmousedown='pushButton("push")' onmouseup='pushButton("pull")'></div>
+    <div class='leonardo' id='leonardo'></div>
+    <div class='benigni' id='benigni'></div>
+    <div class="eagle first" id='eagle_01'></div>
+    <div class="eagle second" id='eagle_02'></div>
+    <div class='poster' id='poster' onClick='removeGifs()'></div>
+    <div class='gradient' id='gradient'></div>
+    <div class='firework left' id='firework_01'></div>
+    <div class='firework right' id='firework_02'></div>
+    <div class='confetti' id='confetti'></div>
+
+    <div class="info subtitle">Plot</div>
+    <div class="info_it subtitle">Trama</div>
+    <div class="info" id="info" ></div>
+    <div class="info_it" id="info_it" ></div>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,249 @@
+.button {
+  background-image: url('imgs/button.png');
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  position: absolute;
+  top: 70%; left: 0; bottom: 30%; right: 0;
+  border: 0px solid black;
+  background-position: center;
+  cursor: pointer;
+}
+
+.title {
+  width: 600px;
+  border:1px solid white;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  top: 15%; left: 0; right: 0;
+  border: 0px solid black;
+  background-position: center;
+  font-family: 'Dosis';
+  color: #ff6666;
+  font-size: 100px;
+  line-height: 90px;
+  text-align: center;
+  text-shadow: 0em 0em 3em #ff6666,
+                   0em 0em 2em #ff6666,
+                   1px 1px 5px #ff6666,
+                   0px 0px 65px #ff6666,
+                   1px 0px 0px white,
+                  -1px 0px 2px rgba(0, 0, 0, .5);
+
+}
+
+.subtitle {
+  transform: translateY(-39px);
+  font-size: 30px !important;
+}
+
+.title:hover, .title.pushed {
+  text-shadow: 0em 0em 5em #ff6666,
+                   0em 0em 3em #ff6666,
+                   0em 0em 2em #ff6666,
+                   1px 1px 5px #ff6666,
+                   0px 0px 10px #ff6666,
+                   0px 0px 25px #ff6666,
+                   0px 0px 45px #ff6666,
+                   2px 1px 0px white,
+                  -1px 0px 2px rgba(0, 0, 0, .5);
+}
+
+.wall {
+  position: absolute;
+  width:100%;
+  height: 100%;
+  top:0;
+  right: 0;
+  background-image: url('imgs/brick.jpg');
+  background-repeat: no-repeat;
+  display: none;
+}
+
+.back {
+  position: absolute;
+  width:100%;
+  height: 100%;
+  top:0;
+  right: 0;
+  /* background-color:#5f9ea0; */
+  background-image: radial-gradient(at 50% 70%, #5f9ea0 0%, #4682b4 60%, #4682b4 100%);
+  opacity:1.0;
+}
+
+.back_noise {
+  position: absolute;
+  width:100%;
+  height: 100%;
+  top:0;
+  right: 0;
+  background-image: url('imgs/noise.png');
+  background-repeat: repeat;
+}
+
+.back_light {
+  position: absolute;
+  width:100%;
+  height: 100%;
+  opacity: 0.7;
+  top:0;
+  right: 0;
+  background-image: radial-gradient(at 50% 70%, #ff6666 0%, #4682b4 80%, #4682b4 100%);
+  display: none;
+
+}
+
+.poster {
+  background-image: url('imgs/trash.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 440px;
+  height: 650px;
+  margin: auto;
+  position: absolute;
+  top: 50%; left: 0; bottom: 50%; right: 0;
+  background-position: center;
+  display: none;
+  /* box-shadow: 10px 10px 10px #141e2b ; */
+}
+
+
+.gradient {
+  background-image: url('imgs/gradient-01.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  mix-blend-mode: multiply;
+  height: 657px;
+  background-size: contain;
+  width: 440px;
+  margin: auto;
+  position: absolute;
+  top: 50%; left: 0; bottom: 50%; right: 0;
+  background-position: center;
+  display: none;
+  /* box-shadow: 10px 10px 10px #141e2b ; */
+}
+
+.gradient.pushed {
+  display: block;
+  animation: blow-up 0.5s ease;
+  animation-fill-mode: forwards;
+}
+
+
+.poster.pushed {
+  display: block;
+  animation: blow-up 0.5s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes blow-up
+{
+  0%   {
+    transform: scale(0.0) rotate(0deg); }
+  100% {
+    transform: scale(1.0) rotate(1440deg);}
+}
+
+.firework {
+  background-image: url('imgs/firework.gif');
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  position: absolute;
+  border: 0px solid black;
+  background-position: center;
+  display: none;
+
+}
+
+.firework.left
+{
+  top: 10%; left: 10%;
+}
+
+.firework.right
+{
+  top: 40%; left: 60%;
+}
+
+.confetti {
+  position: absolute;
+  width:100%;
+  height: 100%;
+  top:0;
+  right: 0;
+  display: none;
+  background-image: url('imgs/confetti.gif');
+  pointer-events: none;
+}
+
+.leonardo {
+  background-image: url('imgs/leonardo.gif');
+  background-repeat: no-repeat;
+  position: absolute;
+  width:500px;
+  height: 213px;
+  bottom:5%;
+  left:5%;
+  display: none;
+}
+
+.benigni {
+  background-image: url('imgs/benigni.gif');
+  background-repeat: no-repeat;
+  position: absolute;
+  width:500px;
+  height: 213px;
+  top:5%;
+  right:5%;
+  display: none;
+}
+
+.info {
+  position: absolute;
+  width: 300px;
+  height: 600px;
+  border: 0px solid white;
+  left:10%;
+  top:10%;
+  color: white;
+  opacity: 0.0;
+  font-family: 'Dosis';
+  font-size: 20px;
+}
+
+.info_it {
+  position: absolute;
+  width: 300px;
+  height: 600px;
+  border: 0px solid white;
+  right:10%;
+  top:10%;
+  color: white;
+  opacity: 0.0;
+  font-family: 'Dosis';
+  font-size: 20px;
+}
+
+.eagle
+{
+  pointer-events: none;
+  position: absolute;
+  width: 288px;
+  height: 288px;
+  background-image: url('/imgs/eagle.gif');
+  top: 40%;
+  left: 40%;
+  display: none;
+  opacity: 0.0;
+}
+
+.eagle.second
+{
+  transform:scaleX(-1);
+}

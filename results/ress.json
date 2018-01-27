@@ -1,0 +1,126 @@
+[
+    {
+        "faceAnnotations": [],
+        "landmarkAnnotations": [],
+        "logoAnnotations": [],
+        "labelAnnotations": [
+            {
+                "mid": "/m/012h24",
+                "locale": "",
+                "description": "comics",
+                "score": 0.9852808117866516,
+                "confidence": 0,
+                "topicality": 0.9852808117866516,
+                "boundingPoly": null,
+                "locations": [],
+                "properties": []
+            },
+            {
+                "mid": "/m/0215n",
+                "locale": "",
+                "description": "cartoon",
+                "score": 0.9494417309761047,
+                "confidence": 0,
+                "topicality": 0.9494417309761047,
+                "boundingPoly": null,
+                "locations": [],
+                "properties": []
+            },
+            {
+                "mid": "/m/01vnb",
+                "locale": "",
+                "description": "comic book",
+                "score": 0.9352949857711792,
+                "confidence": 0,
+                "topicality": 0.9352949857711792,
+                "boundingPoly": null,
+                "locations": [],
+                "properties": []
+            },
+            {
+                "mid": "/m/07s6nbt",
+                "locale": "",
+                "description": "text",
+                "score": 0.906267523765564,
+                "confidence": 0,
+                "topicality": 0.906267523765564,
+                "boundingPoly": null,
+                "locations": [],
+                "properties": []
+            },
+            {
+                "mid": "/m/02xlf",
+                "locale": "",
+                "description": "fiction",
+                "score": 0.8417148590087891,
+                "confidence": 0,
+                "topicality": 0.8417148590087891,
+                "boundingPoly": null,
+                "locations": [],
+                "properties": []
+            },
+            {
+                "mid": "/m/02qd0r",
+                "locale": "",
+                "description": "human behavior",
+                "score": 0.8373849391937256,
+                "confidence": 0,
+                "topicality": 0.8373849391937256,
+                "boundingPoly": null,
+                "locations": [],
+                "properties": []
+            },
+            {
+                "mid": "/m/0bt_c3",
+                "locale": "",
+                "description": "book",
+                "score": 0.8313382863998413,
+                "confidence": 0,
+                "topicality": 0.8313382863998413,
+                "boundingPoly": null,
+                "locations": [],
+                "properties": []
+            },
+            {
+                "mid": "/m/01n5jq",
+                "locale": "",
+                "description": "poster",
+                "score": 0.7603942155838013,
+                "confidence": 0,
+                "topicality": 0.7603942155838013,
+                "boundingPoly": null,
+                "locations": [],
+                "properties": []
+            },
+            {
+                "mid": "/m/02h7lkt",
+                "locale": "",
+                "description": "fictional character",
+                "score": 0.6690273880958557,
+                "confidence": 0,
+                "topicality": 0.6690273880958557,
+                "boundingPoly": null,
+                "locations": [],
+                "properties": []
+            },
+            {
+                "mid": "/m/01kr8f",
+                "locale": "",
+                "description": "illustration",
+                "score": 0.6191631555557251,
+                "confidence": 0,
+                "topicality": 0.6191631555557251,
+                "boundingPoly": null,
+                "locations": [],
+                "properties": []
+            }
+        ],
+        "textAnnotations": [],
+        "fullTextAnnotation": null,
+        "safeSearchAnnotation": null,
+        "imagePropertiesAnnotation": null,
+        "cropHintsAnnotation": null,
+        "webDetection": null,
+        "error": null
+    }
+]
