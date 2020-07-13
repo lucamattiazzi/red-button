@@ -17,7 +17,7 @@
     "google-cloud": "^0.57.0",
     "got": "^8.0.3",
     "imdb-api": "^3.1.2",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.13",
     "p-each": "^0.1.0",
     "p-each-series": "^1.0.0",
     "p-map": "^1.2.0",
