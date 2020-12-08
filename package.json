@@ -13,7 +13,7 @@
   "dependencies": {
     "@google-cloud/vision": "0.14",
     "express": "^4.16.2",
-    "fast-csv": "^2.4.1",
+    "fast-csv": "^4.3.6",
     "google-cloud": "^0.57.0",
     "got": "^8.0.3",
     "imdb-api": "^3.1.2",
