@@ -23,7 +23,7 @@
     "p-map": "^1.2.0",
     "request": "^2.83.0",
     "request-promise": "^4.2.2",
-    "socket.io": "^2.0.4"
+    "socket.io": "^2.4.0"
   },
   "engine": {
     "node": "8.9.0"
